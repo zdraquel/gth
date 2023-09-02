@@ -1,0 +1,172 @@
+.face{
+    border: 2px;
+    height: 110px;
+    width: 110px;
+    background-color: black;
+    border-radius: 10px 10px 50px 50px;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 190px;
+    animation: moveface 1s infinite;
+}
+.eye1{
+    border: 2px;
+    height: 10px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 205px;
+
+}
+.eye2{
+    border: 2px;
+    height: 10px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -10px;
+    margin-left: 260px;
+}
+.mouth{
+    border: 2px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 225px;
+    animation: movemouth 1s infinite ;
+}
+.body1{
+    border: 2px;
+    height: 120px;
+    width: 110px;
+    background-color: black;
+    border-radius: 10px 10px 50px 50px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 190px;
+}
+.righthand{
+    border: 2px;
+    height: 105px;
+    width: 15px;
+    background-color: black;
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 180px;
+    transform: rotate(50deg);
+    animation: moverighthand 1s infinite;
+}
+.lefthand{
+    border: 2px;
+    height: 105px;
+    width: 15px;
+    background-color: black;
+    position: relative;
+    margin-top: -110px;
+    margin-left: 300px;
+    transform: rotate(-50deg);
+    animation: movelefthand 1s infinite;
+}
+.rightleg{
+    border: 2px;
+    height: 105px;
+    width: 20px;
+    background-color: black;
+    position: relative;
+    margin-top: -15px;
+    margin-left: 190px;
+    transform: rotate(20deg);
+    animation: moverightleg 1s infinite;
+}
+.leftleg{
+    border: 2px;
+    height: 107px;
+    width: 20px;
+    background-color: black;
+    position: relative;
+    margin-top: -105px;
+    margin-left: 275px;
+    transform: rotate(-20deg);
+    animation: moveleftleg 1s infinite;
+}
+
+@keyframes moverighthand {
+    0%
+    {transform: rotate(0deg);}
+    25%
+    {transform: rotate(30deg);}
+    50%
+    {transform: rotate(0deg);}
+    75%
+    {transform: rotate(30deg);}
+    100%
+    {transform: rotate(0deg);}
+    
+}
+@keyframes movelefthand {
+    0%
+    {transform: rotate(0deg);}
+    25%
+    {transform: rotate(-30deg);}
+    50%
+    {transform: rotate(0deg);}
+    75%
+    {transform: rotate(-30deg);}
+    100%
+    {transform: rotate(0deg);}
+} 
+@keyframes moverightleg {
+    0%
+    {transform: rotate(0deg);}
+    25%
+    {transform: rotate(30deg);}
+    50%
+    {transform: rotate(0deg);}
+    75%
+    {transform: rotate(30deg);}
+    100%
+    {transform: rotate(0deg);}
+} 
+@keyframes moveleftleg {
+    0%
+    {transform: rotate(0deg);}
+    25%
+    {transform: rotate(-30deg);}
+    50%
+    {transform: rotate(0deg);}
+    75%
+    {transform: rotate(-30deg);}
+    100%
+    {transform: rotate(0deg);}
+}
+@keyframes moveface{
+    0%
+    {transform: skewX(0deg);}
+    25%
+    {transform: skewX(30deg);}
+    50%
+    {transform: skew(0deg);}
+    75%
+    {transform: skew(-30deg);}
+    100%
+    {transform: skew(0deg);}
+
+}
+@keyframes movemouth{
+    0%
+    {transform: skewX(0deg);}
+    25%
+    {transform: skewX(30deg);}
+    50%
+    {transform: skew(0deg);}
+    75%
+    {transform: skew(-30deg);}
+    100%
+    {transform: skew(0deg);}
+}    
